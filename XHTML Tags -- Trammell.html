@@ -39,7 +39,7 @@ X _____________________________________________________________________
 
 <body>
 <a name='top'>
-<div><b>Introduction to HTML tags</b></div>
+<h2><b>Introduction to HTML tags</b></h2>
 <br/>
 <br/>
 
@@ -266,8 +266,90 @@ X _____________________________________________________________________
 		<td>Chocolate</td>
 	</tr>
 </table>
+<br/>
 
+<div>Forms:</div>
+<hr/>
 
+<p><u>Basic form structure:</u></p>
+<br/.
+
+<p>Form tag attributes:</p>
+<ol>
+	<li>action = "specifies a form processing agent i.e. URI"</li>
+	<li>method = "specifies which HTTP method will be used to submit the form data set i.e. get, post"</li>
+	<ul>
+		<li>"get" method: the form data is appended to the URI specified by the action attribute and this new URI is sent to the processing agent</li>
+		<li>"post" method: the form data is included in the body of the form and sent to the processing agent</li>
+	</ul>
+</ol>
+<br/>
+
+<div>The input tag specifies the type of input (i.e. hidden, text, radio, image)
+	<br/>The attributes for input tags are their type="whatever" and value="what you want to show on the button"
+	<br/><br/>Input types and their attributes:
+	<ul>
+		<li>EMPTY ELEMENT! &ensp; input type=["whatever","whatever2"]</li>
+		<li>reset: resets all controls to their inital values</li>
+		<li>submit: submits a form</li>
+		<li>hidden: not rendered on the form but still submitted with a form</li>
+		<li>text: allows users to input text in a single line input control</li>
+		<ol>
+			<li>value="the placeholder value"</li>
+			<li>size="width of bar"</li>
+			<li>maxlength="max characters the user can input"</li>
+		</ol>
+		<li>password: similiar to text, but the characters typed are hidden</li>
+		<li>checkbox: allows you to select one or more items from a list</li>
+		<li>radio: only allowed to select one item from the list; mutually exculsive</li>
+	</ul>
+</div>
+<br/>
+
+<div>
+	<form action="http://www.cs.ulm.edu/~pdw/cgi-bin/post-query" 
+		method="post" 
+		enctype="application/x-www-form-urlencoded">
+
+		<p>Now is the start of the form and the buttons:</p>
+		<input type="hidden" name="hiddenInputName" value="Hidden Value One"/>
+		
+		CWID: <input type="text" name="cwid" value="00000000" size="10" maxlength="8"/>
+		<br/>
+		<br/>
+		
+		Password: <input type="password" name="password" value="12345" size="10" maxlength="5"/>
+		<br/>
+		<br/>
+		
+		Select position (one or more):<br/>
+		<input type="checkbox" name="cposition" value="Student" {checked="checked"}/>Student
+		<br/>
+		<input type="checkbox" name="cposition" value="Faculty" {checked="checked"}/>Faculty
+		<br/>
+		<input type="checkbox" name="cposition" value="Administrator" {checked="checked"}/>Administrator
+		<br/>
+		<br/>
+
+		Select position:<br/>
+		<input type="radio" name="rposition" value="Student" [checked]/>Student
+		<br/>
+		<input type="radio" name="rposition" value="Faculty" [checked]/>Faculty
+		<br/>
+		<input type="radio" name="rposition" value="Administrator" [checked]/>Administrator
+		<br/>
+
+		<input type="submit" value="Submit"/>
+		<input type="reset" value="Reset"/>
+	</form>
+</div>
+<br/>
+<div>
+	Hitting "Submit" will take you to a summary of the data entered (including the hidden data) on a "Query Results" page made by the HTML document
+</div>
+
+<h3>End of basic HTML lectures. Click to follow the next lectures covering <a href='CSS.html'>HTML and CSS.</a></h3>
+<br/>
 
 
 </a>
