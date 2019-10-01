@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>CSS Lecture Notes</title>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta name="description" content="DESCRIPTION_HERE" />
+<meta name="keywords" content="KEYWORDS,SEPARATED,BY,COMMAS,HERE" />
+<meta name="author" content="YOUR_NAME_HERE" />
+<meta name="revised" content="DATE_HERE" />
+</head>
+
+<body>
+<h2>CSS Lectures</h2>
+<hr/>
+
+<p>
+    Cascading Style Sheets (CSS) provides support for all HTML formatting.
+    <br/> It can be defined three ways:
+    <ol>
+        <li>Inline style: per HTML element</li>
+        <li>Embedded style: within an HTML file</li>
+        <li>External style: within an external file</li>
+    </ol>
+    Div elements are preferred over p tags.
+    <br/><br/>
+    <b>Inline</b> style attributes (inside div tag): <br/>&emsp;style="property: value"
+    <br/> NOTE: property:value is always a pair. 
+    <br/> These are placed between body tags.
+
+    <br/><br/><b>Embedded</b> style attributes (inside style tag): 
+    <br/> &emsp;opening style tag type="text/css" end
+    <br/> &emsp;elementname1 {property: value; property1: value1}
+    <br/>&emsp;closing style tag
+    <br/>This type goes between the head tag; it allows a global format.
+
+    <br/><br/><b>External</b> style attributes (inside another file): 
+    <br/> &emsp;elementname1 {property: value; property1: value1}
+    <br/> &emsp;elementname2 {property: value; property3: value3}
+    <br/>Calling the CSS from inside the XHTML file:
+    <br/>&emsp; opening head tag
+    <br/>&emsp; begin link rel="stylesheet" type="text/css" href="fileLocation.css" end
+    <br/>&emsp; closing head tag
+</p>
+
+<h3>CSS Syntax</h3>
+<hr/>
+<ol>
+    <li>
+        Colors:
+        <ul style="color:black">
+            <li>
+                Foreground Colors<br/>&emsp;Inline Style<br/>
+                &emsp;&emsp;begin element name style=“color: value”  end
+                <br/>&emsp; Embedded and External Style<br/>
+                &emsp;&emsp;element name {color: value}
+            </li>
+            <li>
+                Background Colors<br/>&emsp;Inline Style<br/>
+                &emsp;&emsp;begin element name style=“background-color: value”  end
+                <br/>&emsp; Embedded and External Style<br/>
+                &emsp;&emsp;element name {background-color: value}
+            </li>
+            <li style="color:blueviolet">This will be an example of foreground coloring.</li>
+            <li style="background-color:#27d797b3">This will be an example of background coloring.</li>
+        </ul>
+    </li>
+    <li>
+        Font family:
+        <br/>
+    </li>
+</ol>
+
+</body>
+
+</html>

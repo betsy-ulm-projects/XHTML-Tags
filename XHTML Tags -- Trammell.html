@@ -3,28 +3,6 @@
 
 <html xmlns = "http://www.w3.org/1999/xhtml">
 
-<!-- 
-=======================================================================
-Document:         XHTML_template.html
-Author:           Jeri Trammell
-Student Number:   YOUR_STUDENT_CWID_HERE
-Organization:     The University of Louisiana at Monroe
-Class:            CLASS, SEMESTER, YEAR
-Assignment:       Assignemnt XX
-Due Date:         MONTH, DAY, YEAR
-
-Description:      This document displays ...
-
-Honor Statement:  My signature below attests to the fact that I have
-                  neither given nor received aid on this project.
-
-
-X _____________________________________________________________________
-
-
-=======================================================================
--->
-
 <head>
 
 <title>XHTML Lecture Notes</title>
@@ -272,7 +250,7 @@ X _____________________________________________________________________
 <hr/>
 
 <p><u>Basic form structure:</u></p>
-<br/.
+<br/>
 
 <p>Form tag attributes:</p>
 <ol>
@@ -311,7 +289,7 @@ X _____________________________________________________________________
 		method="post" 
 		enctype="application/x-www-form-urlencoded">
 
-		<p>Now is the start of the form and the buttons:</p>
+		<p>Now is the START OF FORM and the buttons:</p>
 		<input type="hidden" name="hiddenInputName" value="Hidden Value One"/>
 		
 		CWID: <input type="text" name="cwid" value="00000000" size="10" maxlength="8"/>
@@ -338,12 +316,48 @@ X _____________________________________________________________________
 		<br/>
 		<input type="radio" name="rposition" value="Administrator" [checked]/>Administrator
 		<br/>
-
-		<input type="submit" value="Submit"/>
-		<input type="reset" value="Reset"/>
-	</form>
 </div>
+<br/><br/>
+
+<textarea rows="4" cols="50">
+	This is a textarea input box. 4 rows by 50 columns.
+</textarea>
 <br/>
+
+<input type="submit" value="Submit"/>
+<input type="reset" value="Reset"/>
+
+</form>
+<br/><br/><br/>
+
+<div>BEGIN A NEW FORM. Please select <b>one</b> fruit:</div>
+<form action="http://www.cs.ulm.edu/~pdw/cgi-bin/post-query" 
+	  method="post" 
+	  enctype="application/x-www-form-urlencoded"
+	  id="fruit">
+
+  <select name="fruitlist1" form="fruit">
+	<option value="banana">Banana</option>
+	<option value="orange">Orange</option>
+	<option value="strawberry">Strawberry</option>
+	<option value="blueberry">Blueberry</option>
+  </select>
+
+<br/><br/>
+
+<div>Select <b>one or more</b> fruits:</div>
+  <select multiple="multiple" size="4" name="fruitlist2" form="fruit">
+	<option value="banana">Banana</option>
+	<option value="orange">Orange</option>
+	<option value="strawberry">Strawberry</option>
+	<option value="blueberry">Blueberry</option>
+  </select>
+<br/>
+  <input type="submit" value="Submit"/>
+</form>
+<br/><br/>
+
+<div>There's also image input. The Query holds the height and width attributes. </div>
 <div>
 	Hitting "Submit" will take you to a summary of the data entered (including the hidden data) on a "Query Results" page made by the HTML document
 </div>
