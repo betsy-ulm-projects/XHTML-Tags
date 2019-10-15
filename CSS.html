@@ -48,7 +48,7 @@
 
 <h3>CSS Syntax</h3>
 <hr/>
-<ol>
+<ol type="I">
     <li>
         Colors:
         <ul style="color:black">
@@ -162,15 +162,18 @@
                 <br/>&emsp;i.e. background-position: top center
             </li>
             <li>background-attachement: fixed</li>
-            <li>background-attachment: scroll</li>
+            <li>background-attachment: scroll<br/><br/></li>
         </ul>
     </li>
     <li>
-        Div/span styling:
-        <ul>
-            <li>width: length|percentage</li>
-            <li>height: length|percentage</li>
-            <li>overflow: visible|hidden|scroll</li>
+        Text Flow:
+        <ol type="1">
+            <li>
+                width: length|percentage
+            </li>
+            <li>
+                height: length|percentage
+            </li>
             <li>
                 Example using span width:30% :
                 <br/> &emsp;
@@ -208,79 +211,128 @@
                         </div> 
                         <br/>  
                     </li>
-        </ul>
+                    <li>
+                        overflow
+                        <ul>
+                            <li>overflow: hidden|scroll|visible</li>
+                            <li>Specifies whether content of a block-level element is clipped when it overflows<br/></li>
+                            <li>"visible" causes all the text to show with no formatting. It prints behind whatever is next.
+                            <br/><br/></li>
+                        </ul>
+                        
+                        <div style="width:200px; height:50px; background-color:#eee; border:1px dotted black; overflow: hidden">
+                            You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box. You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box. You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.
+                        </div>
+                        <br/><br/>
+                        <div style="width:200px; height:50px; background-color:#eee; border:1px dotted black; overflow: scroll">
+                            You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box. You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box. You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.
+                        </div>
+                        <br/><br/>
+                        <div style="width:200px; height:50px; background-color:#eee; border:1px dotted black; overflow: visible">
+                            You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box. You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box. You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.
+                        </div>
+                        <br/><br/>
+                        <br/><br/>
+                        <br/><br/>
+                        <br/><br/>
+                        <br/><br/>
+                        <br/><br/>
+                        <br/><br/>
+                        <br/><br/>
+                        <br/>
+                    </li>
+                    <li>
+                            float
+                            <ul>
+                                <li>float: left|right|none</li>
+                                <li>Specifies whether a box should float to the left, right, or not at all</li>
+                                <br/><br/>
+                            </ul>
+                        </li>
+                        <li>
+                            text-align
+                            <ul>
+                                <li>text-align: left|right|center|justify</li>
+                                <br/>&emsp;
+                            </ul>
+                        </li>
+                        <li>
+                            text-indent
+                            <ul>
+                                <li>text-indent: length|percentage</li>
+                                <br/>&emsp;
+                            </ul>
+                        </li>
+                        <li>
+                            text-decoration
+                            <ul>
+                                <li>text-decoration: overline|line-through|underline|blink|none</li>
+                                <br/>
+                                <div style="text-decoration: overline;">Overline</div>
+                                <div style="text-decoration: line-through">Line-through</div>
+                                <div style="text-decoration: underline">Underline</div>
+                                <div style="text-decoration: blink">Blink no longer works</div>
+                                <div style="text-decoration: none">None</div>
+                                <br/>
+                            </ul>
+                        </li>
+        </ol>
     </li>
+    
     <li>
-        float
-        <ul>
-            <li>float: left|right|none</li>
-            <br/>&emsp;
-        </ul>
-    </li>
-    <li>
-        text-align
-        <ul>
-            <li>text-align: left|right|center|justify</li>
-            <br/>&emsp;
-        </ul>
-    </li>
-    <li>
-        text-indent
-        <ul>
-            <li>text-indent: length|percentage</li>
-            <br/>&emsp;
-        </ul>
-    </li>
-    <li>
-        text-decoration
-        <ul>
-            <li>text-decoration: none|underline|overline|line-through|blink</li>
-            <br/>&emsp;
-        </ul>
-    </li>
-    <li>
-        Borders
-        <ul>
-            <li>border-color</li>
-            <li>border-color-top</li>
-            <li>border-color-bottom</li>
-            <li>border-color-left</li>
-            <li>border-color-right</li>
-            <li>border-width</li>
-            <li>border-width-top</li>
-            <li>border-width-bottom</li>
-            <li>border-width-left</li>
-            <li>border-width-right</li>
-            <li>border-style</li>
-            <li>border-style-top</li>
-            <li>border-style-bottom</li>
-            <li>border-style-left</li>
-            <li>border-style-right</li>
-        </ul>
-        <br/>&emsp;
-    </li>
-    <li>
-        Padding
-        <ul>
-            <li>padding</li>
-            <li>padding-top</li>
-            <li>padding-bottom</li>
-            <li>padding-left</li>
-            <li>padding-right</li>
-        </ul>
-        <br/>&emsp;
-    </li>
-    <li>
-        Margin
-        <ul>
-            <li>margin</li>
-            <li>margin-top</li>
-            <li>margin-bottom</li>
-            <li>margin-left</li>
-            <li>margin-right</li>
-        </ul>
-        <br/>&emsp;
-    </li>
+        Text Box
+        <ol type="A">
+            <li>
+                The defaults for borders, padding, and margin is zero or right against the content box<br/><br/>
+            </li>
+            <li>
+                Borders
+                <ul type="disc">
+                    
+                        <li>border-color</li>
+                        <li>border-color-top</li>
+                        <li>border-color-bottom</li>
+                        <li>border-color-left</li>
+                        <li>border-color-right<br/><br/></li>
+
+                        <li>border-width</li>
+                        <li>border-width-top</li>
+                        <li>border-width-bottom</li>
+                        <li>border-width-left</li>
+                        <li>border-width-right<br/><br/></li>
+
+                        <li>border-style</li>
+                        <li>border-style-top</li>
+                        <li>border-style-bottom</li>
+                        <li>border-style-left</li>
+                        <li>border-style-right<br/><br/</li>
+                        
+                    </ul>
+                    <br/>
+                </li>
+                <li>
+                    Padding
+                    <ul type="disc">
+                        <li>padding</li>
+                        <li>padding-top</li>
+                        <li>padding-bottom</li>
+                        <li>padding-left</li>
+                        <li>padding-right</li>
+                    </ul>
+                    <br/>
+                </li>
+                <li>
+                    Margin
+                    <ul type="disc">
+                        <li>margin</li>
+                        <li>margin-top</li>
+                        <li>margin-bottom</li>
+                        <li>margin-left</li>
+                        <li>margin-right</li>
+                    </ul>
+                    <br/>
+                </li>
+        </ol>
 </ol>
 <br/>
 
